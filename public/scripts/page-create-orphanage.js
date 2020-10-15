@@ -7,7 +7,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
 // create icon
 const icon = L.icon({
-  iconUrl: "./public/images/map-marker.svg",
+  iconUrl: "/images/map-marker.svg",
   iconSize: [58, 68],
   iconAnchor: [29, 68],
 });
@@ -80,10 +80,8 @@ function toggleSelect(event) {
   button.classList.add("active");
 
   // atualizar o meu input hidden com o valor selecionado
-  const input = document.querySelector('[name = open-on-weekends]');
-   
+  const input = document.querySelector("[name = open-on-weekends]");
+
   // verificar se sim ou não
   input.value = button.dataset.value;
-
-
 }
